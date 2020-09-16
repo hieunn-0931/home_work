@@ -9,9 +9,17 @@ class _DoctorsInfoState extends State<DoctorsInfo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0.0,
+        brightness: Brightness.light,
+        iconTheme: IconThemeData(
+            color: Colors.black87
+        ),
+      ),
       body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 24, horizontal: 24),
+        child: Container(
+          padding: EdgeInsets.symmetric(horizontal: 24),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -185,7 +193,7 @@ Open till 7 Pm''',
                             child: Text(
                               "List Of Schedule",
                               style: TextStyle(color: Colors.white,
-                                  fontSize: 16),
+                                  fontSize: 17),
                             ),
                           )
                         ],
@@ -217,7 +225,7 @@ Open till 7 Pm''',
                             child: Text(
                               "Doctor's Daily Post",
                               style: TextStyle(color: Colors.white,
-                                  fontSize: 16),
+                                  fontSize: 17),
                             ),
                           )
                         ],
